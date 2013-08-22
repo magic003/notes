@@ -22,3 +22,8 @@ The three most common forms of algorithmic notation are: **English**, **pseudoco
 Problem specifications have two parts:
 * the set of allowed input instances,
 * the required properties of the algorithm's output.
+
+### 1.3.4 Induction and Recursion
+
+Mathemtical induction is usually the right to verify the correctness of a recursive or incremental insertion algorithm.
+
