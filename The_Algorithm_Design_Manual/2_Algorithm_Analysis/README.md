@@ -27,4 +27,22 @@ The Big Oh notation are:
 * _f(n) = &Omega;(g(n))_ means _c&sdot;g(n)_ is an __lower bound__ on _f(n)_.
 * _f(n) = &Theta;(g(n))_ means _c<sub>1</sub>&sdot;g(n)_ is an upper bound on _f(n)_ and _c<sub>2</sub>&sdot;g(n)_ is a lower bound on _f(n)_.
 
+2.3 Growth Rates and Dominance Relations
+----------------------------------------
+
+### 2.3.1 Dominance Relations
+
+A faster-growing function **dominates** a slower-growing one.
+
+Functions listed in order of increasing dominance:
+
+* Constant functions, _f(n) = 1_
+* Logarithmic functions, _f(n) = log n_
+* Linear functions, _f(n) = n_
+* Superlinear functions, _f(n) = n lg n_
+* Quadratic functions, _f(n) = n<sup>2</sup>_
+* Cubic functions, _f(n) = n<sup>3</sup>_
+* Exponiential functions, _f(n) = c<sup>n</sup>_
+* Factorial functions, _f(n) = n!_
+
 
