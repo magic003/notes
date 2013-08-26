@@ -45,4 +45,6 @@ Functions listed in order of increasing dominance:
 * Exponiential functions, _f(n) = c<sup>n</sup>_
 * Factorial functions, _f(n) = n!_
 
+n! >> c<sup>n</sup> >> n<sup>3</sup> >> n<sup>2</sup> >> n<sup>1+&epsilon;</sup> >> n log n >> n >> n<sup>1/2</sup> >>
+log<sup>2</sup>n >> log n >> log n / log log n >> log log n >> &alpha;(n) >> 1
 
