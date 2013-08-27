@@ -44,3 +44,28 @@ A binary search tree labels each node in a binary tree with a single key such th
 The shape (and more importantly height) of the tree is a function of the order in which we insert the keys. If the keys are inserted in sorted order, it will produce a linear height tree.
 
 On average, the height is O(logn).
+
+3.7 Hashing and Strings
+-----------------------
+
+### 3.7.1 Collision Resolution
+
+Chaining is the easiest approach to collision resolution.
+
+The alternative is open addressing.
+
+### 3.7.2 Efficient String Matching via Hashing
+
+Rabin-Karp algorithm for Substring Pattern Matching problem.
+
+### 3.7.3 Duplicate Detection via Hashing
+
+The key idea of hashing is to represent a large object using a single number.
+
+3.8 Specialized Data Structures
+-------------------------------
+
+* String data structures: character strings are typically represented by arrays of characters, perhaps with a special character to mark the end of the string.
+* Geometric data structures: geometric data typically consists of collections of data points and regions.
+* Graph data structures: graphs are typically represented using either adjacency matrices or adjacency lists.
+* Set data structures: subsets of items are typically represented using a dictionary to support fast membership queries. Alternately, bit vectors are boolean arrays such that the ith bit represents true if i is in the subset.
