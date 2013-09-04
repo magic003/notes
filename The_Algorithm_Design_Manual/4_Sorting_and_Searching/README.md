@@ -20,3 +20,7 @@ Heapsort runs in worst-case O(nlogn) time. It is an in-place sort.
 ### 4.3.4 Faster Heap Construction
 
 A heap can be constructed on _n_ elements by incremental insertion in _O(nlogn)_ time. It can be constructed in _O(n)_ time using buble_down procedure.
+
+### 4.3.5 Sorting by Incremental Insertion
+
+The faster sorting algorithms based on incremental insertion follow more efficient data structures. Insertion into a balanced search tree take O(logn) per operation, or a total of O(nlogn) to construct the tree. An in order travesal reads through the elements in sorted order to complete the job in linear time.
