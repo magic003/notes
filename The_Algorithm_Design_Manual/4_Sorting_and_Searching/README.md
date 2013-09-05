@@ -31,3 +31,9 @@ The faster sorting algorithms based on incremental insertion follow more efficie
 Mergesort takes O(nlogn) time in the worst case.
 
 Mergesort is a great algorithm for sorting linked lists, because it does not rely on random access to elements as does heapsort or quicksort. Its primary disadvantage is the need for an auxillary buffer when sorting arrays.
+
+4.6 Quicksort: Sorting by Randomization
+---------------------------------------
+
+The worst case for quicksort is worse than heapsort or mergesort. Quicksort had better be good in average case.
+
