@@ -24,3 +24,10 @@ A heap can be constructed on _n_ elements by incremental insertion in _O(nlogn)_
 ### 4.3.5 Sorting by Incremental Insertion
 
 The faster sorting algorithms based on incremental insertion follow more efficient data structures. Insertion into a balanced search tree take O(logn) per operation, or a total of O(nlogn) to construct the tree. An in order travesal reads through the elements in sorted order to complete the job in linear time.
+
+4.5 Mergesort: Sorting by Divide-and-Conquer
+--------------------------------------------
+
+Mergesort takes O(nlogn) time in the worst case.
+
+Mergesort is a great algorithm for sorting linked lists, because it does not rely on random access to elements as does heapsort or quicksort. Its primary disadvantage is the need for an auxillary buffer when sorting arrays.
