@@ -37,3 +37,13 @@ Mergesort is a great algorithm for sorting linked lists, because it does not rel
 
 The worst case for quicksort is worse than heapsort or mergesort. Quicksort had better be good in average case.
 
+### 4.6.2 Randomized Algorithms
+
+Randomized quicksort runs in &Theta;(nlogn) time on any input, with high probability.
+
+Randomization is a powerful tool to improve algorithms with bad worst-case but good average-case complexity.
+
+### 4.6.3 Is Quicksort Really Quick?
+
+Where a properly implemented quicksort is implemented well, it is typically 2-3 times faster than mergesort or heapsort.
+
