@@ -20,6 +20,8 @@ void bucketsort(int* arr, int size, int k) {
             arr[pos++] = i;
         }
     }
+
+    free(bucket);
 }
 
 int main(int argc, char* argv[]) {
