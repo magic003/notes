@@ -65,3 +65,9 @@ One-sided binary search is most useful whenever we are looking for a key that li
 
 ### 4.9.3 Square and Other Roots
 
+4.10 Divide-and-Conquer
+-----------------------
+
+Two important algorithm design paradigms are based on breaking problems down into smaller problems:    
+* Dynamic programming typically removes one element from the problem, solves the smaller problem, and then uses the solution to this smaller problem to add back the element in the proper way.
+* Divide-and-conquer instead splits the problem in halves, solves each half, then stitches the pieces back together to form a full solution.
