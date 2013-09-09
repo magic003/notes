@@ -18,3 +18,10 @@ A graph G = (V, E) consists of a set of vertices V together with a set E of vert
 5.2 Data Strucutures for Graphs
 -------------------------------
 
+* Adjacency Matrix: We can represent G using an n &times; n matrix M, where element M[i,j] = 1 if (i,j) is an edge of G, and 0 if it isn't. This allows fast answers to the question "is (i,j) in G?", and rapid updates for edge insertion and deletion.
+* Adjacency Lists: We can more efficiently represent sparse graphs by using linked lists to store the neighbors adjacent to each vertex. Adjacency lists are the right data structure for most applications of graphs.
+
+5.5 Traversing a Graph
+----------------------
+
+
