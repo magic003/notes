@@ -36,10 +36,20 @@ There are two points to remember when using breadth-first search to find a short
 1. the shortest path tree is only useful if BFS was performed with x as the root of the search.
 2. BFS gives the shortest path only if the graph is unweighted.
 
-5.7 Depth-First Search
+5.8 Depth-First Search
+----------------------
 
 BFS uses **Queue** to store the discovered vertices, while DFS uses **Stack**.
 
 DFS partitions the edges of an undirected graph into exactly two classes: tree edges and back edges. All edges fall into these two classes.
 
 DFS organizes vertices by entry/exit times, and edges into tree and back edges. This organization is what gives DFS its real power.
+
+5.10 Depth-First Search on Directed Graphs
+------------------------------------------
+
+### 5.10.1 Topological Sorting
+
+### 5.10.2 Strongly Connected Components
+
+The graph is strongly connect iff all verices in G can (1) reach v and (2) are reachable from v.
