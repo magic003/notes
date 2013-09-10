@@ -24,4 +24,22 @@ A graph G = (V, E) consists of a set of vertices V together with a set E of vert
 5.5 Traversing a Graph
 ----------------------
 
+Each vertex will exist in one of three states:
+* undiscovered - the vertex is in its initial, virgin state.
+* discovered - the vertex has been found but we have not yet checked out all its incident edges.
+* processed - the vertex after we have visited all its incident edges.
 
+5.6 Breadth-First Search
+------------------------
+
+There are two points to remember when using breadth-first search to find a shortest path from x to y:
+1. the shortest path tree is only useful if BFS was performed with x as the root of the search.
+2. BFS gives the shortest path only if the graph is unweighted.
+
+5.7 Depth-First Search
+
+BFS uses **Queue** to store the discovered vertices, while DFS uses **Stack**.
+
+DFS partitions the edges of an undirected graph into exactly two classes: tree edges and back edges. All edges fall into these two classes.
+
+DFS organizes vertices by entry/exit times, and edges into tree and back edges. This organization is what gives DFS its real power.
