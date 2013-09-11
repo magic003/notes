@@ -18,6 +18,8 @@ void readGraph(int graph[][MAX+1], const char* file) {
 
     if (fp != NULL) {
         int x, y;
+        // consume and ignore the number of vertices
+        fscanf(fp, "%d\n", &x);
         while (fscanf(fp, "%d %d\n", &x, &y) != -1) {
             graph[x][y] = 1;
         }
