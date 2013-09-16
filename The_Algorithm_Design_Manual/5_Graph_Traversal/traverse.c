@@ -10,7 +10,7 @@ static void run_bfs(Graph* g, int start, TraverseListener* listener, int* discov
     while (!emptyQueue(q)) {
         int v = dequeue(q);
         if (listener->beforeProcess != NULL) {
-            listener->beforeProcess(start);
+            listener->beforeProcess(v);
         }
 
         Node* node = g->nodes[v];
