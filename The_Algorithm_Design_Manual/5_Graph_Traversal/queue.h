@@ -5,10 +5,11 @@ typedef struct {
     int* arr;
     int head;
     int tail;
+    int capacity;
     int size;
 } Queue;
 
-Queue* newQueue(int size);
+Queue* newQueue(int capacity);
 
 void enqueue(Queue* q, int x);
 

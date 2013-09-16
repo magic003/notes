@@ -9,7 +9,9 @@ static void run_bfs(Graph* g, int start, TraverseListener* listener, int* discov
 
     while (!emptyQueue(q)) {
         int v = dequeue(q);
-        listener->beforeProcess(start);
+        if (listener->beforeProcess != NULL) {
+            listener->beforeProcess(start);
+        }
 
         Node* node = g->nodes[v];
         while (node != NULL) {
@@ -17,16 +19,22 @@ static void run_bfs(Graph* g, int start, TraverseListener* listener, int* discov
             if (!discovered[y]) {
                 enqueue(q, y);
                 discovered[y] = 1;
-                listener->onDiscovered(y, v);
+                if (listener->onDiscovered != NULL) {
+                    listener->onDiscovered(y, v);
+                }
             } else if (!processed[y] || g->directed) {
-                listener->onProcessEdge(v, y);
+                if (listener->onProcessEdge != NULL) {
+                    listener->onProcessEdge(v, y);
+                }
             }
 
             node = node->next;
         }
 
         processed[v] = 1;
-        listener->afterProcess(v);
+        if (listener->afterProcess != NULL) {
+            listener->afterProcess(v);
+        }
     }
 }
 
