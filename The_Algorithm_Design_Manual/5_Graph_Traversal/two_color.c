@@ -34,13 +34,13 @@ Color complement(Color c) {
 
 void onDiscovered(int t, int s) {
     discovered[t] = 1;
-    colors[t] = complement(colors[s]);
 }
 
 void onProcessEdge(int x, int y) {
     if (colors[x] == colors[y]) {
         printf("This is not a bipartite because of (%d, %d)\n", x, y);
     }
+    colors[y] = complement(colors[x]);
 }
 
 void twocolor(Graph* g) {

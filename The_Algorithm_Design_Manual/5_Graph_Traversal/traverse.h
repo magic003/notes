@@ -11,4 +11,6 @@ typedef struct {
 
 void bfs(Graph* g, int start, TraverseListener* listener);
 
+void dfs(Graph* g, int start, TraverseListener* listener);
+
 #endif

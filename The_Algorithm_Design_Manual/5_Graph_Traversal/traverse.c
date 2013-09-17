@@ -22,7 +22,8 @@ static void run_bfs(Graph* g, int start, TraverseListener* listener, int* discov
                 if (listener->onDiscovered != NULL) {
                     listener->onDiscovered(y, v);
                 }
-            } else if (!processed[y] || g->directed) {
+            } 
+            if (!processed[y] || g->directed) {
                 if (listener->onProcessEdge != NULL) {
                     listener->onProcessEdge(v, y);
                 }
@@ -38,6 +39,40 @@ static void run_bfs(Graph* g, int start, TraverseListener* listener, int* discov
     }
 }
 
+static void run_dfs(Graph* g, int start, TraverseListener* listener, int* discovered, int* processed) {
+    Node* node = g->nodes[start];
+
+    discovered[start] = 1;
+    if (listener->beforeProcess != NULL) {
+        listener->beforeProcess(start);
+    }
+
+    while (node != NULL) {
+        int v = node->label;
+        if (!discovered[v]) {
+            discovered[v] = 1;
+            if (listener->onDiscovered != NULL) {
+                listener->onDiscovered(v, start);
+            }
+            if (listener->onProcessEdge != NULL) {
+                listener->onProcessEdge(start, v);
+            }
+            run_dfs(g, v, listener, discovered, processed);
+        } else if (!processed[v] || g->directed) {
+            if (listener->onProcessEdge != NULL) {
+                listener->onProcessEdge(start, v);
+            }
+        }
+
+        node = node->next;
+    }
+
+    processed[start] = 1;
+    if (listener->afterProcess != NULL) {
+        listener->afterProcess(start);
+    }
+}
+
 void bfs(Graph* g, int start, TraverseListener* listener) {
     int size = g->nvertices;
 
@@ -50,6 +85,23 @@ void bfs(Graph* g, int start, TraverseListener* listener) {
     }
 
     run_bfs(g,start,listener,discovered,processed);
+
+    free(discovered);
+    free(processed);
+}
+
+void dfs(Graph* g, int start, TraverseListener* listener) {
+    int size = g->nvertices;
+
+    int* discovered = (int*) malloc((size+1) * sizeof(int));
+    int* processed = (int*) malloc((size+1) * sizeof(int));
+    int i;
+    for (i=0;i<=size;i++) {
+        discovered[i] = 0;
+        processed[i] = 0;
+    }
+
+    run_dfs(g,start,listener,discovered,processed);
 
     free(discovered);
     free(processed);
