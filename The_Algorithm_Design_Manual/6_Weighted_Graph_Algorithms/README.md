@@ -11,3 +11,13 @@ The minimum spanning tree is the spanning tree whose sum of edge weights is as s
 There can be more than one minimum spanning tree in a graph.
 
 ### 6.1.1 Prim's Algorithm
+
+The complexity can be O(m + nlgn) if a priority-queue data structure is used.
+
+### 6.1.2 Kruskal's Algorithm
+
+Kruskal's algorithm is an alternate approach to find minimum spanning trees that proves more efficent on **sparse** graphs.
+
+It runs in O(mlgm) time if the union-find data structure is used.
+
+### 6.1.3 The Union-Find Data Structure
