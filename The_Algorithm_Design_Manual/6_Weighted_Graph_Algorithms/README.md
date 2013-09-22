@@ -21,3 +21,7 @@ Kruskal's algorithm is an alternate approach to find minimum spanning trees that
 It runs in O(mlgm) time if the union-find data structure is used.
 
 ### 6.1.3 The Union-Find Data Structure
+
+Both unions and finds are in O(logn).
+
+### 6.1.4 Variations on Minimum Spanning Trees
