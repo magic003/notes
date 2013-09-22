@@ -25,3 +25,19 @@ It runs in O(mlgm) time if the union-find data structure is used.
 Both unions and finds are in O(logn).
 
 ### 6.1.4 Variations on Minimum Spanning Trees
+
+6.3 Shortest Paths
+------------------
+
+### 6.3.1 Dijkstra's Algorithm
+
+The complexity is O(n<sup>2</sup>).
+
+Dijkstra works correctly only on graphs without negative-cost edges.
+
+### 6.3.2 All-Pairs Shortest Path
+
+The Floyd-Warshall all-pairs shortest path runs in O(n<sup>3</sup>) time.
+
+### 6.3.3 Transitive Closure
+
