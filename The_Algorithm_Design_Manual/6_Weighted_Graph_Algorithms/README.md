@@ -41,3 +41,10 @@ The Floyd-Warshall all-pairs shortest path runs in O(n<sup>3</sup>) time.
 
 ### 6.3.3 Transitive Closure
 
+6.5 Network Flows and Bipartite Matching
+----------------------------------------
+
+6.6 Design Graphs, Not Algorithms
+---------------------------------
+
+
