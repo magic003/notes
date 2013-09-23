@@ -40,7 +40,8 @@ void loadGraph(Graph* g, const char* filename) {
         if (edge == NULL) {
             g->edges[x] = newedge;
         } else {
-            edge->next = newedge;
+            newedge->next = edge;
+            g->edges[x] = newedge;
         }
 
         (g->nedges)++;
