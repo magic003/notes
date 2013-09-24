@@ -22,4 +22,35 @@ Pruning is the technique of cutting off the search the instance we have establis
 7.3 Sudoku
 ----------
 
+7.5 Heuristic Search Methods
+----------------------------
+
+All methods have two commont components:   
+* Solution space representation
+* Cost function
+
+### 7.5.1 Random Sampling
+
+When might random sampling do well:   
+
+* When there are a high proportion of acceptable solutions.
+* When there is no coherence in the solution space.
+
+### 7.5.2 Local Search
+
+Greedy search or gradient descent search are great at finding local optima quickly, but often fail to find the globally best solution.
+
+When local search does well:
+
+* When there is great coherence in the solution space.
+* Whenever the cost of incremental evaluation is much cheaper than global evaluation.
+
+### 7.5.3 Simulated Annealing
+
+7.8 Other Heuristic Search Methods
+----------------------------------
+
+7.9 Parallel Algorithms
+-----------------------
+
 
