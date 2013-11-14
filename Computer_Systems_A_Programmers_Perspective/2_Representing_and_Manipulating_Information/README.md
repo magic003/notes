@@ -33,4 +33,21 @@ Binary code is seldom portable across different combinations of machine and oper
 
 ### 2.1.10 Shift Operations in C
 
+2.2 Integer Representations
+---------------------------
 
+### 2.2.1 Integral Data Types
+
+### 2.2.2 Unsigned and Tow's Complement Encodings
+
+### 2.2.3 Conversions Between Signed and Unsigned
+
+The cast from a signed value to unsigned value does not change the bit representation of the argument, just how these bits are interpreted as a number.
+
+### 2.2.4 Signed vs. Unsigned in C
+
+### 2.2.5 Expanding the Bit Representation of a Number
+
+To convert an unsigned number to a larger data type, we can simply add leading 0s to the representation. This operation is known as __zero extension__. For converting two's complement number to a larger data type, the rule is to perform a __sign extension__.
+
+### 2.2.6 Truncating Numbers
