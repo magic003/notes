@@ -51,3 +51,29 @@ The cast from a signed value to unsigned value does not change the bit represent
 To convert an unsigned number to a larger data type, we can simply add leading 0s to the representation. This operation is known as __zero extension__. For converting two's complement number to a larger data type, the rule is to perform a __sign extension__.
 
 ### 2.2.6 Truncating Numbers
+
+### 2.2.7 Advice on Signed vs. Unsigned
+
+2.3 Integer Arithmetic
+----------------------
+
+### 2.3.1 Unsigned Addition
+
+An arithmetic operation is said to overflow when the full integer result cannot fit within the word size limits of the data type.
+
+### 2.3.2 Two's Complement Addition
+
+### 2.3.3 Two's Complement Negation
+
+A well-known technique for performing two's complement negation at the bit level is to complement the bits and then increment the result.
+
+### 2.3.4 Unsigned Multiplication
+
+### 2.3.5 Two's Complement Multiplication
+
+### 2.3.6 Multiplying by Powers of Two
+
+### 2.3.7 Dividing by Powers of Two
+
+2.4 Floating Point
+------------------
