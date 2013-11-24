@@ -77,3 +77,19 @@ A well-known technique for performing two's complement negation at the bit level
 
 2.4 Floating Point
 ------------------
+
+### 2.4.1 Fractional Binary Numbers
+
+### 2.4.2 IEEE Floating-Point Representation
+
+### 2.4.3 Example Numbers
+
+### 2.4.4 Rounding
+
+### 2.4.5 Floating-Point Operations
+
+### 2.4.6 Floating Point in C
+
+2.5 Summary
+-----------
+
