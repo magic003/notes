@@ -89,3 +89,36 @@ Caller save and callee save registers.
 ### 3.8.2 Pointer Arithmetic
 
 ### 3.8.3 Arrays and Loops
+
+### 3.8.4 Nested Arrays
+
+### 3.8.5 Fixed Size Arrays
+
+### 3.8.6 Dynamically Allocated Arrays
+
+3.9 Heterogeneous Data Structures
+---------------------------------
+
+### 3.9.1 Structures
+
+The implementation of structures is similar to that of arrays in that all of the components of a structure are stored in a contiguous region of memory, and a pointer to a structure is the address of its first byte.
+
+### 3.9.2 Unions
+
+Rather than having the different fields reference different blocks of memory, they all reference the same block.
+
+3.10 Alignment
+--------------
+
+Many computer systems place restrictions on the allowable addresses for the primitive data types, requiring that the address for some type of object must be a multiple of some value k (typically 2,4, or 8). This is called alignment restrictions.
+
+3.11 Putting it Together: Understanding Pointers
+------------------------------------------------
+
+3.12 Life in the Real World: Using the GDB Debugger
+---------------------------------------------------
+
+3.13 Out-of-Bounds Memory References and Buffer Overflow
+--------------------------------------------------------
+
+
