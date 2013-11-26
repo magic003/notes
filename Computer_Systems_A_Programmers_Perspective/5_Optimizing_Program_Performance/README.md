@@ -9,4 +9,24 @@ Writing an efficient program requires two types of activities. First, we must se
 5.2 Expressing Program Performance
 ----------------------------------
 
+5.3 Program Example
+-------------------
+
+5.4 Eliminating Loop Inefficiencies
+-----------------------------------
+
+5.5 Reducing Procedure Calls
+----------------------------
+
+5.6 Eliminating Unneeded Memory References
+------------------------------------------
+
+5.7 Understanding Modern Processors
+-----------------------------------
+
+### 5.7.1 Overall Operation
+
+### 5.7.2 functional Unit Performance
+
+### 5.7.3 A Closer Look at Processor Operation
 
