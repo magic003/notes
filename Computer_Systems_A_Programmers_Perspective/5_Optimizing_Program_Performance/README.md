@@ -30,3 +30,21 @@ Writing an efficient program requires two types of activities. First, we must se
 
 ### 5.7.3 A Closer Look at Processor Operation
 
+5.8 Reducing Loop Overhead
+--------------------------
+
+5.9 Converting to Pointer Code
+------------------------------
+
+5.10 Enhancing Parallelism
+--------------------------
+
+5.11 Putting it Together
+------------------------
+
+5.12 Branch Prediction and Misprediction Penalties
+--------------------------------------------------
+
+5.13 Understanding Memory Performance
+-------------------------------------
+
