@@ -48,3 +48,26 @@ Writing an efficient program requires two types of activities. First, we must se
 5.13 Understanding Memory Performance
 -------------------------------------
 
+5.14 Life in the Real World: Performance Improvement Techniques
+---------------------------------------------------------------
+
+Basic strategies for optimizing program performance:
+1. High-level design. Choose appropriate algorithms and data structures.
+2. Basic coding principles. Avoid optimization blockers:
+    * Eliminate excessive function calls. Move computations out of loops when possible.
+    * Eliminate unnecessary memory references. Introduce temporary variables to hold intermediate results. Store a result in an array or global variable only when the final value has been computed.
+3. Low-level optimizations.
+    * Try various forms of pointer versus array code.
+    * Reduce loop overhead by unrolling loops.
+    * Find ways to make user of the pipelined functional units by techniques such as iteration splitting.
+
+5.15 Identifying and Eliminating Performance Bottlenecks
+--------------------------------------------------------
+
+## 5.15.3 Amdahl's Low
+
+To significantly speed up the entire system, we must improve the speed of a very large fraction of the overall system.
+
+5.16 Summary
+------------
+
