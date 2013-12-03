@@ -40,3 +40,44 @@ There are three ways the driver can be put into the kernel.
 1.4 The Operating System Zoo
 ----------------------------
 
+### 1.4.1 Mainframe Operating Systems
+
+### 1.4.2 Server Operating Systems
+
+### 1.4.3 Multiprocessor Operating Systems
+
+### 1.4.4 Personal Computer Operating Systems
+
+### 1.4.5 Handheld Computer Operating Systems
+
+### 1.4.6 Embedded Operating Systems
+
+### 1.4.7 Sensor Node Operating Systems
+
+### 1.4.8 Real-Time Operating Systems
+
+### 1.4.9 Smart Card Operating Systems
+
+1.5 Operating System Concepts
+-----------------------------
+
+### 1.5.1 Processes
+
+### 1.5.2 Address Spaces
+
+### 1.5.3 Files
+
+Two kinds of special files exist: block special files and character special files. Block special files are used to model devices that consist of a collection of randomly addressable blocks, such as disks. Character special files are used to model printers, modems and other devices that accept or output a character stream.
+
+A pipe is a sort of psuedofile that can be used to connect two processes.
+
+### 1.5.4 Input/Output
+
+### 1.5.5 Protection
+
+### 1.5.6 Shell
+
+### 1.5.7 Ontogeny Recapitulates Phylogeny
+
+1.6 System Calls
+----------------
