@@ -81,3 +81,27 @@ A pipe is a sort of psuedofile that can be used to connect two processes.
 
 1.6 System Calls
 ----------------
+
+1.7 Operating System Structure
+------------------------------
+
+### 1.7.1 Monolithic Systems
+
+### 1.7.2 Layered Systems
+
+### 1.7.3 Microkernels
+
+### 1.7.4 Client-Server Model
+
+### 1.7.5 Virtual Machines
+
+### 1.7.6 Exokernels
+
+1.8 The World According to C
+----------------------------
+
+1.9 Research of Operating Systems
+---------------------------------
+
+1.12 Summary
+------------
