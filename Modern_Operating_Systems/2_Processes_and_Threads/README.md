@@ -123,3 +123,57 @@ Monitors have an important property that makes them useful for achieving mutual 
 It is up to the compiler to implement mutual exclusion on monitor entries, but a common way is to use a mutex or a binary semaphore.
 
 Condition variables, along with two operations on them, __wait__ and __signal__.
+
+The operations __wait__ and __signal__ are very similar to __sleep__ and __wakeup__, but with one crucial difference: __sleep__ and __wakeup__ failed because while one process was trying to go to sleep, the other one was trying to wake it up. With monitors, that cannot happen. The automatic mutual exclusion on monitor procedures guarantees that if the producer inside a monitor procedure discorvers that the buffer is full, it will be able to complete the __wait__ operation without having to worry about the possibility that the scheduler may switch to the consumer just before the __wait__ completes.
+
+### 2.3.8 Message Passing
+
+### 2.3.9 Barriers
+
+2.4 Scheduling
+--------------
+
+### 2.4.1 Introduction to Scheduling
+
+### 2.4.2 Scheduling in Batch Systems
+
+**First-Come First-Served**
+
+**Shortest Job First**
+
+**Shortest Remaining Time Next**
+
+### 2.4.3 Scheduling in Interactive Systems
+
+**Round-Robin Scheduling**
+
+**Priority Scheduling**
+
+**Multiple Queues**
+
+**Shortest Process Next**
+
+**Guaranteed Scheduling**
+
+**Lottery Scheduling**
+
+**Fair Share Scheduling**
+
+### 2.4.4 Scheduling in Real-Time Systems
+
+### 2.4.5 Policy versus Machanism
+
+The scheduling algorithm is parameterized in some way, but the parameters can be filled in by user processes.
+
+### 2.4.6 Thread Scheduling
+
+2.5 Classical IPC Problems
+--------------------------
+
+### 2.5.1 The Dining Philosophers Problem
+
+### 2.5.2 The Readers and Writers Problem
+
+2.7 Summary
+-----------
+
