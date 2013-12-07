@@ -78,3 +78,39 @@ The two best algorithms are aging and WSClock. They are based on LRU and the wor
 
 ### 3.5.1 Local versus Global Allocation Policies
 
+Local algorithms correspond to allocating every process a fixed fraction of the memory. Global algorithms dynamically allocate page frames among runnable processes. Thus the number of page frames assigned to each process varies in time.
+
+### 3.5.2 Load Control
+
+### 3.5.3 Page Size
+
+### 3.5.4 Spearate Instruction and Data Spaces
+
+### 3.5.5 Shared Pages
+
+### 3.5.6 Shared Libraries
+
+### 3.5.7 Mapped Files
+
+### 3.5.8 Cleaning Policy
+
+### 3.5.9 Virtual Memory Interface
+
+3.6 Implementation Issues
+-------------------------
+
+### 3.6.1 Operating System Involvement with Paging
+
+### 3.6.2 Page Fault Handling
+
+### 3.6.3 Instruction Backup
+
+### 3.6.6 Separation of Policy and Machanism
+
+3.7 Segmentation
+----------------
+
+3.9 Summary
+-----------
+
+
