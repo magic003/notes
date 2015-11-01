@@ -8,19 +8,14 @@ public class Quicksort {
     }
 
     private static int partition(int[] arr, int low, int high) {
-        int pivot = high;
-        int firsthigh = low;
-
-        for(int i=low;i<high;i++) {
-            if (arr[i] <= arr[pivot]) {
-                swap(arr,i,firsthigh);
-                firsthigh++;
+        int pivot = low;
+        for (int i = low + 1; i <= high; i++) {
+            if (arr[i] <= arr[low]) {
+                swap(arr, i, ++pivot);
             }
         }
-
-        swap(arr,firsthigh,pivot);
-
-        return firsthigh;
+        swap(arr, low, pivot);
+        return pivot;
     }
 
     private static void swap(int[] arr, int i, int j) {
